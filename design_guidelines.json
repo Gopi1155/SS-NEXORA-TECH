@@ -1,0 +1,159 @@
+{
+  "theme_strategy": "Modern Glassmorphism (Awwwards-Level) - Dark Mode Default",
+  "typography": {
+    "headings": {
+      "family": "Outfit, sans-serif",
+      "styles": "Tracking-tight for large text. Use font-black or font-light for extreme contrast.",
+      "scales": {
+        "h1": "text-4xl sm:text-5xl lg:text-6xl+",
+        "h2": "text-2xl sm:text-3xl lg:text-4xl",
+        "h3": "text-xl sm:text-2xl"
+      },
+      "rules": "DO NOT use Inter for headings. Implement masked line-by-line reveal for Hero H1 using framer-motion."
+    },
+    "body": {
+      "family": "IBM Plex Sans, sans-serif",
+      "scales": {
+        "base": "text-base",
+        "small": "text-sm",
+        "overline": "text-xs uppercase tracking-[0.2em]"
+      }
+    }
+  },
+  "colors": {
+    "archetype": "ELECTRIC & NEON / LUXURY TECH",
+    "base": {
+      "background": "#05050A",
+      "surface_glass": "rgba(255, 255, 255, 0.03)",
+      "surface_glass_hover": "rgba(255, 255, 255, 0.08)",
+      "border": "rgba(255, 255, 255, 0.1)"
+    },
+    "brand": {
+      "primary": "#007AFF",
+      "primary_glow": "rgba(0, 122, 255, 0.5)",
+      "accent_cyan": "#00F0FF",
+      "accent_cyan_glow": "rgba(0, 240, 255, 0.6)"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "secondary": "#94A3B8",
+      "inverse": "#05050A"
+    },
+    "rules": "Never use pure black or pure white. Tint black with blue. Do not use generic full-screen gradients. Apply glowing shadows on primary interactive elements."
+  },
+  "visual_enhancers": {
+    "glassmorphism": "High-end crystal glass. Use 'bg-white/5 backdrop-blur-xl backdrop-saturate-150 border border-white/10 shadow-lg' for cards and sticky headers.",
+    "glow_effects": "Use drop-shadows with primary/cyan colors for buttons and hover states. e.g., 'hover:shadow-[0_0_20px_rgba(0,240,255,0.4)]'.",
+    "gradient_borders": "Use the 'Tracing Beam' or animated gradient borders on premium feature cards.",
+    "textures": "Subtle noise overlay (opacity 0.02) over the main background to eliminate digital flatness."
+  },
+  "component_rules": {
+    "navigation": "Floating glass header (fixed, z-50). MUST have backdrop-blur-xl and semi-transparent bg. Do NOT use completely transparent background. Keep links visible on desktop.",
+    "buttons": "Pill-shaped (rounded-full). Default state: solid primary or subtle glass. Hover state: animated glow, text color explicit, scale up slightly (scale-105).",
+    "cards": "Frosted glass cards. No default solid colors. Must have 1px semi-transparent border to separate from background.",
+    "forms": "Use Shadcn components but override default styling. Inputs should have 'bg-white/5 border-white/10 text-white placeholder-slate-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400'.",
+    "dashboard": "High density grid. Surfaces can be slightly more opaque for data readability but maintain the tech/glass theme. Use Shadcn datatables and charts."
+  },
+  "grids": {
+    "marketing": "Asymmetric 'Tetris' Bento grids. gap-8 to gap-12. Span logic mixing tall, wide, and square cells.",
+    "dashboard": "Strict high-density grid (grid-cols-4 or 12). gap-4 or gap-6. Every pixel utilized.",
+    "spacing_scale": "p-4, p-6, p-8, p-12, p-16, p-24, p-32. Generous padding inside bordered glass containers to avoid text collisions."
+  },
+  "layouts": {
+    "hero": "Kinetic, subtle parallax background. Numbered manifesto chapters. Center content for high impact or heavily asymmetric. Include 'Empowering Future Tech Leaders' tagline.",
+    "sections": "Separated by massive padding (py-24 or py-32). Incorporate a slow editorial marquee (e.g., using react-fast-marquee) for tech partners/courses.",
+    "alignment": "Left-align dense text and forms. Center-align hero titles only if balanced."
+  },
+  "motion": {
+    "libraries": "framer-motion, @studio-freight/lenis (smooth scrolling).",
+    "hero_reveal": "Masked line-by-line text reveal on load (framer-motion variants with y: 100%, opacity: 0 to y: 0, opacity: 1).",
+    "scroll_reveal": "Staggered fade-up for bento grid cards.",
+    "interactions": "Hover lifts (-translate-y-1), glowing borders on hover. Micro-interactions for buttons.",
+    "parallax": "Subtle framer-motion useScroll / useTransform for hero images and background abstract elements."
+  },
+  "accessibility": {
+    "contrast": "Ensure text over glass meets APCA standards. Use text-shadow if needed over complex backgrounds.",
+    "focus": "High contrast focus rings (focus:ring-2 focus:ring-cyan-400).",
+    "motion": "Respect prefers-reduced-motion for heavy parallax or marquee."
+  },
+  "media": {
+    "style": "High-contrast, tech-focused, cinematic. Dark overlays (bg-black/40) on background images so text remains readable.",
+    "logo_rules": "Always use the provided company logo. Do not substitute with text."
+  },
+  "3d_libraries": "framer-motion for 2.5D parallax. react-fast-marquee for marquee. lucide-react and @phosphor-icons/react for icons.",
+  "image_urls": {
+    "company_logo": [
+      {
+        "url": "https://customer-assets-eiarnc6j.emergentagent.net/job_98f20b1c-aded-48d2-adc1-6e43bd96e549/artifacts/wcoxhf9m_company%20logo.jpeg",
+        "category": "Brand",
+        "description": "SS NEXORA TECH blue and black tech-style 'SS' logo"
+      }
+    ],
+    "hero_backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1683064325134-3acfdef9c6d7",
+        "category": "Background",
+        "description": "Abstract blue wavy lines for tech background"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1634834300387-8015d9fb7550",
+        "category": "Background",
+        "description": "Tunnel with neon lights for deep parallax sections"
+      }
+    ],
+    "courses": [
+      {
+        "url": "https://images.unsplash.com/photo-1528901166007-3784c7dd3653",
+        "category": "Courses",
+        "description": "Man using black laptop, representing coding/web dev courses"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1637073849667-91120a924221",
+        "category": "Courses",
+        "description": "Two men coding, representing advanced tech training"
+      }
+    ],
+    "internships_and_office": [
+      {
+        "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+        "category": "Internships / About Us",
+        "description": "Group of people using laptop, representing tech teamwork and internships"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+        "category": "Media / Office",
+        "description": "People sitting inside a room collaborating"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: framer-motion, @studio-freight/lenis, react-fast-marquee, @phosphor-icons/react, sonner.",
+    "Project uses standard React (.js), so write JSX in .js files, NOT .tsx.",
+    "Ensure dark mode is the default and enforced to support the glowing glassmorphism aesthetic.",
+    "Implement the 'Awwwards-level' kinetic hero: Use framer-motion to create a staggered, line-by-line text reveal for the H1 tag.",
+    "Build a slow editorial marquee using 'react-fast-marquee' containing tech keywords or course categories. Style it with transparent backgrounds and glowing borders.",
+    "Implement the navigation bar as a floating, sticky crystal glass header (backdrop-blur-xl bg-black/40 border-b border-white/10).",
+    "For the admin dashboard, prioritize high density and clarity, but retain the dark tech theme. Use customized Shadcn tables, forms, and dialogs with glass elements.",
+    "All cards must have a 1px border-white/10 and subtle inner shadow to pop from the background.",
+    "When displaying the provided logo, ensure it has a proper alt tag and is sized appropriately.",
+    "Create numbered manifesto chapters (e.g., '01 / INNOVATION', '02 / LEADERSHIP') separated by large padding, utilizing scroll-triggered fade-ups."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: 'transition: all'. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add '.App { text-align: center; }' in the css file. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories = main agent will use placeholder text which is FORBIDDEN.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Use 'sonner' for toasts. Sonner component are located in /app/frontend/src/components/ui/sonner.js.",
+    "All interactive and key informational elements MUST include a 'data-testid' attribute to facilitate robust automated testing."
+  ]
+}
