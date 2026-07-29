@@ -6,8 +6,6 @@
     "@hookform/resolvers": "5.0.1",
     "@studio-freight/lenis": "^1.0.42",
     "@tanstack/react-query": "5.56.2",
-    "ajv": "^8.17.1",
-    "ajv-keywords": "^5.1.0",
     "axios": "1.18.0",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
